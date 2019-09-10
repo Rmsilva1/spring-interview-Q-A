@@ -1,0 +1,19 @@
+What is Auto Configuration?
+
+	Auto configuration its implemented in a jar called spring-boot-autoconfigure.jar.
+
+	Spring boot looks at frameworks(JARS) that are available
+	in the classpath and if it matches with one that is supported by
+	spring framework, spring will auto configure it.
+	
+	examples: GsonHttpMessageConvertersConfiguration,
+			  ErrorProper ties
+			  jdbc
+	
+
+How can we find more information about Auto Configuration?
+
+1 - Turn on debug loggin
+	logging.level.org.springframwork: DEBUG
+	
+2 - Use Spring Boot Actuator.

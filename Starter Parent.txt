@@ -1,0 +1,21 @@
+What is Starter Parent?
+
+its the parent pom used in almost all spring boot applications...
+if you look at spring boot starter parent it has an spring-boot-dependencies that 
+defines a lot of different things like java version, encoding of the project , source and target of the compilation
+but the most important part is the spring-boot-depencies, and is where it defines all the versions of the dependencies.
+
+So when using spring boot you dont need to define any version of the dependencies 
+
+	You dont need to specify the version of an specific dependency like hibernate
+	Starter parent does it by you specifing the version of the spring boot.
+
+What are the different things that area defined in Starter Parent?
+
+ Java Version
+ spring-boot-dependencies that is a parent pom that has all the version of the dependencies that it will be needed
+
+
+How does Spring Boot enforce common dependency management for all its Starter projects?
+
+	By the spring boot Starter parent that uses the spring boot version.

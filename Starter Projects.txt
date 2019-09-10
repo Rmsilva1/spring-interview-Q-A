@@ -1,0 +1,13 @@
+What are Starter Projects?
+
+	Starters are convinent dependency descriptors that you can include in your application.
+	You get a one-stop-shop for all the Spring and related technology that you need,
+	without having to hunt throug sample code and copy paste loads of dependency
+	descriptors..
+
+ 
+Can you give examples of important starter projects
+	spring-boot-starter-json
+	hibernate-validator
+	spring-web
+	spring-mvc

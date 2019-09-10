@@ -1,0 +1,40 @@
+ioc container
+-find beans 
+-wire dependencies
+-manage Life cicles 
+
+prefer constructor dependencies injection becaus of immutability
+when you use constructor injection you define de dependency while it is being created
+
+while, by setter injection, you create the bean, and then change it is attribute with the dependency
+
+
+
+
+Autowiring
+
+By type
+by name 
+constructor 
+
+
+
+why spring framework?
+
+- Architecture - Flexible & No restriction
+- Design - Loosely Coupled
+- Code - Easy Unit Testing
+- Features - Dependency injection, IOC
+	Container ( Bean Factory & 	Application Context), Auto wiring
+	Component scan
+- Spring Modules
+- Spring Projects
+
+Why spring mvc is so popular?
+
+Clear separation of concerns
+	-Dispatcher Servlet
+	-View Resolver
+	-View
+	-Model
+	

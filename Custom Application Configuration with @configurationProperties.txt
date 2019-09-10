@@ -1,0 +1,15 @@
+How do you externalize configuration using Spring Boot?
+
+	application.properties file, and you can also use yaml, application.yaml
+
+How can you add custom application properties using Spring Boot?
+
+	you create a bean @Component
+					  @ConfigurationProperties("basic)
+			          public class BasicConfiguration{}
+	 
+
+
+What is @ConfigurationProperties
+
+is an annotation to identify that a bean is a configuration properties bean

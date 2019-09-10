@@ -1,0 +1,25 @@
+Spring boot
+1 - in a spring application we have a lot of configurations, dispatcher servlet, view resolver etc, and spring boot makes that easy..
+
+2 - The world is moving to microservices and we dont have a lot of time to set up 100 microservices.
+
+Spring boot goals
+1 - Provide a quick start to spring project
+2 - Be opinionated taks a opinion and tries to implement it.
+3 - Non functional features, like monitoring, error handling etc..
+4 - No code generation
+
+Spring boot features 
+1 - Auto configuration -
+	
+	When you add an specific jar into the classpath like spring mvc jar, and it will automatically configure everything that is needed to develop a web application
+	If you add in an JPA in the classpath then you will get an autoconfiguration related to connecting to the database datasource, EntityManager Factory, etc....
+	
+2 - Spring boot starter projects
+
+3 - Spring boot actuator 
+	
+	Helps monitoring the application.
+	
+4 - Embedded Server
+

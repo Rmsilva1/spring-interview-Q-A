@@ -1,0 +1,4 @@
+What is Spring initializr?
+
+Its a tool to create a spring projects ("start.sring.io") or use intelliJ initializer
+you can define the dependencies you need, or modules, actuator aspectJ etc...

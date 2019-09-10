@@ -1,0 +1,45 @@
+Compare Spring boot vs spring ?
+Compare Spring boot vs spring MVC?
+
+In a rest service application we will use spring, spring mvc, and
+
+Spring
+Most important important feature of spring framework is dependency injection.
+At the core of all spring modules is Dependency Injection IOC Inversion of control.
+
+
+Tight coupling is the inverse of dependency injection
+like you have a service class that you need and it is an attribute of another class, that is tight coupled
+
+You cannot have that, that is why you add an @autowired annotation to inject it by spring.
+
+
+Problems spring solves
+
+Problem 1 : Duplication/Plumbing code - like using spring jpa, that you dont need to the define the query etc...
+Problem 2 : Good integration with other frameworks
+
+Spring MVC
+
+Spring MVC framework provides decoupled way of developing web applications, With simple concepts like
+Dispatcher Servlet, ModelAndView and View Resolver, it makes it easy to develop web applications.
+
+Spring Boot
+
+Eliminates all configuration needed by Spring and Spring MVC and auto configures it
+
+* No need for @componentScan. Default Component Scan.
+* No need to configure DispatcherServlet
+* No need to configure a Data Source, Entity Manager Factory or Transaction Manager.
+
+Spring Boot Thinking
+	
+	Can we bring mor intelligance into this?
+	When a spring mvc jar is added into an application, can we auto configure 
+	some beans automatically?
+	
+Spring Boot looks at
+* Framweorks available on the CLASSPATH
+* Existing configuration for the application.
+
+based on these, Spring boot provides something called: AutoConfiguration

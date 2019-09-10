@@ -1,0 +1,14 @@
+Embedded Servers
+
+What is an embedded server? Why is it important?
+
+	We are moving to the world of microservers, 
+	so we dont need to configure a tomcat server in each microservice we develop.
+
+What is the default embedded server with Spring Boot?
+
+	Tomcat
+
+What are the other embedded servers supported by Spring Boot?
+
+	Jetty and UnderTow
