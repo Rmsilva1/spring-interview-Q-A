@@ -1,0 +1,13 @@
+What is Spring Boot Actuator?
+	
+	Its basicaly an application that you can monitor your application/endpoints/apis with spring boot
+	all that you need to do is add a single dependency, it exposes a lot of services.
+	Examples: /env, /metrics, /trace, /dump, /beans, /autoconfig, /configprops, /mappings
+
+How do you monitor web services using Spring Boot Actuator?
+	You can use a hard browser or an project that visualize the endpoints, because the actuator has no front end.
+	it only exposes some url that you can consume to bring infos about your application
+
+How do you find more information about your application environment using Spring Boot?
+
+	by requesting to /application/metrics, it provides a lot of information about the endpoints too.

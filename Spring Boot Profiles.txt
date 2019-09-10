@@ -1,0 +1,20 @@
+What is a profile?
+
+	Is a configuration in spring that allows you to run/use different parts of the code/project
+
+Hpw do you set up a profile?
+
+	You can pass an argument as you run the application like
+		"-Dspring.profiles.active=prod" or in "application.properties" = "spring.profiles.active=prod"
+
+How do you define beans for a specific profile?
+
+	By using the @Profile("dev") on a bean
+
+How do you create application configuration for a specific profile?
+
+	By creating specific files for the profiles.
+	application-dev.properties
+	application-qa.properties
+	application-hml.properties
+	application-prod.properties
