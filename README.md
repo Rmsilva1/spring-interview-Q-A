@@ -1,4 +1,4 @@
-# spring-interview-Q-A
+# spring-interview-Q&A
 
 Common questions and awnsers for spring interviews
 I do not own most of the questions and content...
