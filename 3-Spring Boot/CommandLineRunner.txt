@@ -1,0 +1,5 @@
+What is a Command Line Runner?
+
+	Its an interface used to indicate that a bean should run when it is contained within a SpringApplication
+	It means that if you implement the CommandLineRunner in a bean the code within the bean should be runned
+	You can use to populate mock user data by example.
