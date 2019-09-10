@@ -1,0 +1,11 @@
+What is Spring JDBC? How is different from JDBC?
+
+	Spring JDBC is much more consise, you dont need to do all the exception handling that is needed in JDBC
+	you dont need to manage the resource connections (st.close();, connection.close()) all is taken care by the Spring JDBC
+
+What is a JdbcTemplate?
+
+	It has the methods jdbc, like jdbcTemplate.update("delete from todo where id = ?", id) 
+	reduces the complexity in jdbc, and makes the checked excpetions into runtime Exceptions
+
+What is a RowMapper?
