@@ -9,3 +9,9 @@ What is a JdbcTemplate?
 	reduces the complexity in jdbc, and makes the checked excpetions into runtime Exceptions
 
 What is a RowMapper?
+	
+	Is used by JdbcTemplate for mapping rows of a ResultSet on a per-row basis. 
+	Implementations of this interface perform the actual work of mapping each row to a result object. 
+	SQLExceptions if any thrown will be caught and handled by the calling JdbcTemplate.
+	
+	

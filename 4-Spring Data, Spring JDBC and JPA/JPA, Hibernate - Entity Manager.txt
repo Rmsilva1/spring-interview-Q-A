@@ -1,0 +1,35 @@
+What is JPA?
+
+ JPA defines the mapping of your Pojos to a table
+ it defines how your java object maps to a row in specific table.
+ JPA provides various annotations where you can define your classes to be tables, once
+ you write your entities the hibernate will be responsible to generate the queries for the.
+
+What is Hibernate?
+
+	Is an JPA implementation, it will create the queries necessary to create the tables etc...
+	Exemple: JPA is the interface and Hibernate is the implementation of it.
+
+How do you define an entity in JPA?
+
+	By putting the following annotations in your java Class...
+	@Entity
+	@Table(name = "Todo")
+	public class TodoEntity { }
+
+What is an Entity Manager?
+
+	/**
+	* Interface used to interact with the persistence context.
+	**/
+	
+	It is responsible to manage the entities defined in our project
+	method examples: entityManager.merge(todoEntity);
+	
+
+What is a Persistence Context?
+
+	@PersistenceContext
+	The annotation used to manage all the entities
+	Whatever changes we make to our entities have to go throug
+	a persistance Context, we can use EntityManager.
