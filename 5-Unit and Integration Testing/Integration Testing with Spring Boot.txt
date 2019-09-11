@@ -1,0 +1,27 @@
+How do you write an integration test with Spring Boot?
+
+	Use an annotation @SpringBootTest and specify the Spring boot application Class
+	example
+	
+	@RunWith(SpringRunner.class)
+	@SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
+	public class SurveyControllerIT {
+	
+		@LocalServerPort
+		private int port;
+	
+	}
+
+What is @SpringBootTest?
+
+	It is an annotation to specify where is the application class of your application
+	it mocks your application to another port
+
+What is @LocalServerPort?
+
+	Is the annotation that indicates where the mocked application port 
+	will be autowired into so we can fire requests to the specific port.
+
+What is TestRestTemplate?
+
+	To fire the request to the spring boot application.

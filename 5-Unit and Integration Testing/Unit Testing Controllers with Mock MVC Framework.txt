@@ -1,0 +1,39 @@
+What is MockMvc?
+
+	You mock your service, for example you need to mock your localhost:8080/students
+	MockMvc helps you to do that, instead of running your controller you run mockMvc.
+
+What is @WebMvcTest?
+
+	It is an annotation  that you define that you are writing an 
+	WebMvcTest and witch controller are we using for example
+	@WebMvcTest(value = SurveyController.class, secure = false)
+
+What is @MockBean?
+
+	To create a mock of our service/beans and return data that we want.
+
+How do you write a unit test with MockMVC?
+
+	You need to mock our returned data
+	and then we need to define that when our service.method is called
+	then return our mocked data.
+	
+	Then we need to build a request for example:
+	
+	RequsestBuilder requestBuilder = MockMvcRequestBuilders.get("/surveys/Survey1/questions/Question1").accept(
+	MediaType.APPLICATION_JSON);
+	
+	And after that we need to execute the request:
+	
+	MvcResult result = mockMvc.perform(requestBuilder).andReturn();
+	
+	String expected = "{id:Question1, description:Largest Country in the World}"
+	
+	JSONAssert.assertEquals(expected, result.getResponse().getContentAsString(),false);
+	
+	//assert
+
+What is JSONAssert?
+
+	It makes it easy to assert jsons, it removes some spacing etc....

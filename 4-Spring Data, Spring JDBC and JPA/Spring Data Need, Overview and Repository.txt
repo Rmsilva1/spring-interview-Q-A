@@ -1,0 +1,22 @@
+What is Spring Data?
+
+	Provides a common abstraction to store and retrieve data from data stores,
+	idependent of type of data store
+
+What is the need for Spring Data?
+
+	Reduces the amount of redundant code in the application
+
+What is Spring Data JPA?
+
+	Extends the concepts of Spring Data for connection to JPA and provides a JPA implementation.
+	
+What is a CrudRepository?
+
+	Its a repository that extends from JpaRepository,
+	that have some common crud methods like save, delete, findById...
+
+What is a PagingAndSortingRepository?
+
+	Its a repository that extends from CrudRepository
+	but in addition provides paging and sorting

@@ -1,0 +1,5 @@
+Can you give an example of SOAP Request and SOAP Response?
+
+What is a SOAP Header? What kind of information is sent in a SOAP Header?
+
+Can you give an example of a SOAP Header with Authentication information?

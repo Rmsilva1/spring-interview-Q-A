@@ -1,0 +1,43 @@
+What is an Aspect and Pointcut in AOP?
+
+	Aspect is the combination of the Pointcut and the Advice.
+
+	Its the pointcut of the interception, what do you want to interception
+	a method in a class, or even any method in a class example:
+	@Around(value = "execution(* HiByeService.*(..))")
+	this pointcut is intercepting any method in the HiByeService class
+	
+What is an JoinPoint?
+
+	JoinPoint its the specific result of one execution
+	for example a pointcut its called 100 times
+	and we will have 100 different of joinPoints
+	
+What are the different types of AOP advices?
+
+	Its the code that you want to run
+	for example:
+	
+	Before advice
+	after returning advice 
+	after throwing advice
+	after (finally) advice - Always executed
+	around advice - Most powerful - Performance Logging
+
+what is weaving?
+
+	Weaving its the process of making sure that
+	these methods are getting called in the right
+	instances.
+	
+what is weaver?
+	
+	Is the AOP framework
+	
+AspectJ vs Spring AOP
+
+	AspectJ is a full fledged AOP framework
+	
+	*Advise object not managed by the Spring container
+	*Advise join points other than simple method executions
+	 **(for example, field get or set join points)

@@ -1,0 +1,21 @@
+How does Spring Framework Make Unit Testing Easy?
+
+	By property dependencies etc...
+
+What is Mockito?
+
+	Mockito is a mocking framework
+
+What is your favorite mocking framework?
+
+	Mockito
+
+How do you mock data with Mockito?
+
+	you use the @mock annotation in the service like for example
+	DataService dataServiceMock = mock(DataService.class);
+	when(dataServiceMock.retrieveAllData()).thenReturn new int[] { 24, 15, 3});
+
+What are the different mocking annotations that you worked with?
+
+	@Mock, @InjectMocks

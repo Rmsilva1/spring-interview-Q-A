@@ -1,0 +1,32 @@
+How do you map relationships in JPA?
+By using annotations like @OneToOne, @ManyToMany @OneToMany
+
+What are the different types of relationships in JPA?
+
+OneToOne, OneToMany, ManyToMany
+
+How do you define One to One Mapping in JPA? 
+
+Lets imagine you have an Entity called Student and another one named Passport, one student can have only one passport and vice versa,
+To map it, you'll have to create an attribute like Passport with the annotation @OneToOne on the student entity, and vice versa, but you also need to define the owning side of the relationship.
+like in the Student entity you create the attribute as follows:
+@OneToOne(fetch = FetchType.LAZY, mappedBy = "passport")
+With that being done, it will be created one column named passport_id in the Student's table.
+If you remove the mappedBy = "passport" it will be created passport_id in the student table and student_id in the passport Table.
+
+How do you define One to Many Mapping in JPA?
+
+For example a project and tasks, a project can have multiples tasks but a task reference only one project.
+
+By creating an attribute as List<Task> in your Project entity and marking it as @OneToMany(mappedBy = "project")
+and in the Task entity you map it as @ManyToOne, @JoinColumn(name = "PROJECT_ID")
+So in the task table, it will be created an column with the name of "PROJECT_ID" that references the Project Table.
+
+How do you define Many to Many Mapping in JPA?
+
+For example Project and students.
+
+By creating an List<Student> in your Project entity and vice versa
+But you will also have to make the following annotation
+@JoinTable("STUDENT_PROJ", joinColumns = @joinColumn(name = "STUDENT_ID"), InverseJoinColumns = @JoinColumn(name="PROJECT_ID"))
+"STUDENT_PROJ" will be the name of the table that it will have the ids of the both tables.

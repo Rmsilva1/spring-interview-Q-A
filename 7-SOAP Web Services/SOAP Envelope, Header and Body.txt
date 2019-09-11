@@ -1,0 +1,15 @@
+What is SOAP Web Service?
+	
+	Its an XML-Based definition of a communication of webservice
+	it transfers SOAP XML Request/ SOAP XML Response
+	where you have a SOAP-ENV that has Header and body
+
+What is a SOAP Envelope?
+
+	Its the wrapper of Soap Header and Body
+
+What is SOAP Header and SOAP Body?
+
+	SOAP Header contains authentication information
+	body contains the raw information that you are
+	wanting to send to the client/consumer

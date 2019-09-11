@@ -1,0 +1,30 @@
+How do you define a datasource in a Spring Context?
+
+	By defining a bean datasource and defining the class of the bean that you are using.
+	then define the driverClass jdbcUrl, user, password.
+	
+	Or you can define in the application.properties with 
+	db.driver=org.hsqldb:mem:firstdb
+	db.username=sa
+	db.password=
+	
+What is the use of persistence.xml?
+
+	Used to configure you persistence unit
+	you can define what is the persistence provider, the different dialects and etc... 
+
+How do you configure Entity Manager Factory and Transaction Manager?
+
+	It will be needed a persistence context, persistence unit and a datasource.
+
+How do you define a transaction management for Spring - Hibernate integration?
+
+	Transaction management = if you are doing 3 steps and the 2 step fails
+	you want to rollback the 1 step.
+	
+	If you are making changes to 3 tables and the second one fails
+	it will be everything rolledback, and to do this you'll need 
+	an transaction management, and to configure a transaction manager
+	you will need an entity manager factory and a datasource aswell.
+	
+	

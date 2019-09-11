@@ -1,0 +1,7 @@
+What is a Web Service?
+
+3 keys
+
+* Designed for machine-to-machine (or application-to-application) interaction
+* Should be interoperable - Not platform dependent
+* Should allow communication over a network

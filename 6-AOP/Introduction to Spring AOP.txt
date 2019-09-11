@@ -1,0 +1,11 @@
+What are cross cutting concerns?
+
+	Web development have a lot of layers, like Web, business, data etc
+	but there are things that concerns of every layer, like LOGGING for example
+	this are cross cutting concern.
+
+How do you implement cross cutting concerns in a web application?
+
+If you would want to log every request to a web app, what are the options you can think of?
+
+If you would want to track performance of every request, what options can you think of?
